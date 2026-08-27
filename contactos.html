@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Política de Privacidade · Cardoso Narciso</title>
-<meta name="description" content="Política de privacidade e proteção de dados da Cardoso Narciso SU LDA.">
-<link rel="canonical" href="https://cardosonarciso.com/privacidade.html">
-<meta property="og:title" content="Política de Privacidade · Cardoso Narciso">
-<meta property="og:description" content="Política de privacidade e proteção de dados da Cardoso Narciso SU LDA.">
+<title>Contactos · Cardoso Narciso</title>
+<meta name="description" content="Contacte a Cardoso Narciso. Geral, Direção, Comercial e Técnico.">
+<link rel="canonical" href="https://cardosonarciso.com/contactos.html">
+<meta property="og:title" content="Contactos · Cardoso Narciso">
+<meta property="og:description" content="Contacte a Cardoso Narciso. Geral, Direção, Comercial e Técnico.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://cardosonarciso.com/privacidade.html">
+<meta property="og:url" content="https://cardosonarciso.com/contactos.html">
 <meta property="og:image" content="https://cardosonarciso.com/assets/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -54,22 +54,71 @@
 
 <section class="page-head">
   <div class="wrap">
-    <div class="eyebrow">Legal</div>
-    <h1>Política de Privacidade</h1>
+    <div class="eyebrow">Contactos</div>
+    <h1>Vamos falar sobre o vosso projeto.</h1>
+    <p style="max-width:60ch;">Contacte o departamento adequado. A Cardoso Narciso responde com a maior brevidade possível.</p>
   </div>
 </section>
+
 <section>
-  <div class="wrap" style="max-width:70ch;">
-    <p>A Cardoso Narciso SU LDA ("nós", "a empresa") respeita a privacidade de quem visita o nosso site e utiliza os nossos serviços.</p>
-    <h3>Dados recolhidos</h3>
-    <p>Recolhemos dados de audiência através do Google Analytics (após consentimento via banner de cookies) e os dados que nos fornece voluntariamente através do formulário de contacto.</p>
-    <h3>Utilização dos dados</h3>
-    <p>Os dados de contacto são utilizados exclusivamente para responder à sua solicitação. Os dados de audiência são utilizados de forma agregada para melhorar o site.</p>
-    <h3>Os seus direitos</h3>
-    <p>Pode solicitar acesso, retificação ou eliminação dos seus dados a qualquer momento através de geral@cardosonarciso.com.</p>
-    <p style="font-size:0.85rem; color:var(--ink-soft);">Última atualização: 2026.</p>
+  <div class="wrap contact-grid">
+    <div>
+      <div class="eyebrow">Formulário</div>
+      <h2>Enviar mensagem</h2>
+      <p style="font-size:0.88rem;">Ao enviar, abre o seu programa de email com a mensagem pronta para o departamento selecionado.</p>
+      <form id="contactForm" style="margin-top:20px;">
+        <div class="field">
+          <label for="dept">Área / Serviço</label>
+          <select id="dept" name="dept">
+            <option value="geral@cardosonarciso.com">Geral</option>
+            <option value="direcao@cardosonarciso.com">Direção (governo, ministérios, grandes clientes)</option>
+            <option value="comercial@cardosonarciso.com">Comercial (propostas e orçamentos)</option>
+            <option value="tecnico@cardosonarciso.com">Técnico (assistência e manutenção)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="email">O seu email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="msg">Mensagem</label>
+          <textarea id="msg" name="msg" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+      </form>
+    </div>
+
+    <div>
+      <div class="eyebrow">Morada e telefone</div>
+      <h2>Informação direta</h2>
+      <ul class="contact-list">
+        <li><span>Morada</span><span>Bairro Popular, Rua Cmd. Cow-boy, Sumbe, Cuanza Sul</span></li>
+        <li><span>Telefone / WhatsApp</span><span>(+244) 923 412 359</span></li>
+        <li><span>Geral</span><span>geral@cardosonarciso.com</span></li>
+        <li><span>Direção</span><span>direcao@cardosonarciso.com</span></li>
+        <li><span>Comercial</span><span>comercial@cardosonarciso.com</span></li>
+        <li><span>Técnico</span><span>tecnico@cardosonarciso.com</span></li>
+      </ul>
+    </div>
   </div>
 </section>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const dept = document.getElementById('dept').value;
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const msg = document.getElementById('msg').value;
+  const subject = encodeURIComponent('Contacto via site — ' + name);
+  const body = encodeURIComponent(msg + '\n\n— ' + name + ' (' + email + ')');
+  window.location.href = 'mailto:' + dept + '?subject=' + subject + '&body=' + body;
+});
+</script>
 
 <footer class="site">
   <div class="wrap">
