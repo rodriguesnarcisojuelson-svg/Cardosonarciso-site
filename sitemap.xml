@@ -12,4 +12,16 @@
   <url><loc>https://cardosonarciso.com/contactos.html</loc><priority>0.6</priority></url>
   <url><loc>https://cardosonarciso.com/privacidade.html</loc><priority>0.3</priority></url>
   <url><loc>https://cardosonarciso.com/termos.html</loc><priority>0.3</priority></url>
+  <url><loc>https://cardosonarciso.com/en/</loc><priority>1.0</priority></url>
+  <url><loc>https://cardosonarciso.com/en/about-us.html</loc><priority>0.8</priority></url>
+  <url><loc>https://cardosonarciso.com/en/credibility.html</loc><priority>0.8</priority></url>
+  <url><loc>https://cardosonarciso.com/en/services/</loc><priority>0.9</priority></url>
+  <url><loc>https://cardosonarciso.com/en/services/medicinal-gases.html</loc><priority>0.7</priority></url>
+  <url><loc>https://cardosonarciso.com/en/services/installation-maintenance.html</loc><priority>0.7</priority></url>
+  <url><loc>https://cardosonarciso.com/en/services/electromedical-equipment.html</loc><priority>0.7</priority></url>
+  <url><loc>https://cardosonarciso.com/en/services/medical-accessories.html</loc><priority>0.7</priority></url>
+  <url><loc>https://cardosonarciso.com/en/services/consulting-training.html</loc><priority>0.7</priority></url>
+  <url><loc>https://cardosonarciso.com/en/contact.html</loc><priority>0.6</priority></url>
+  <url><loc>https://cardosonarciso.com/en/privacy.html</loc><priority>0.3</priority></url>
+  <url><loc>https://cardosonarciso.com/en/terms.html</loc><priority>0.3</priority></url>
 </urlset>
